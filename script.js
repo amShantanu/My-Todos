@@ -38,8 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
     renderTodos();
   });
 
+  function updateButtonCounts() {
+    const completedCount = todos.filter(todo => todo.completed).length;
+    const todoCount = todos.filter(todo => !todo.completed).length;
+    todoBtn.textContent = `Todo ${todoCount}`;
+    completedBtn.textContent = `Completed ${completedCount}`;
+  }
+
   function renderTodos() {
     const filteredTodos = todos.filter(todo => todo.completed === isCompleted);
+    updateButtonCounts();
     todoList.innerHTML = filteredTodos.map(todo => `
       <div class="todo-list-items">
         <div>
@@ -67,5 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   todoBtn.classList.add('active');
+  updateButtonCounts();
   renderTodos();
 });
