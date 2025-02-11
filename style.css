@@ -136,17 +136,16 @@ h1 {
 }
 
 .todo-list-items h3 {
-  font-size: 22px;
+  font-size: 25px;
   color: deepskyblue;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .todo-list-items p {
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
-  margin: 0;
+  margin-top: 8px;
 }
 
 .icons {
