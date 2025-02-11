@@ -1,66 +1,45 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Interactive Todo List</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  <div className="App">
-     <h1 class="js-typed-wrapper lw-typed-wrapper lw-widget-in no-margin-top lw-brand-text learnworlds-heading learnworlds-heading-small learnworlds-element" ><span> <span style="color: steelblue;"> Todos..</span></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
-     </h1>
-    
-      <div className="todo-wrapper">
-        <div className="todo-input">
-          <div className="todo-input-item">
-            <label>Title ⬇️</label>
-            <input type="text" placeholder="What You Decided?" />
-          </div>
-          <div className="todo-input-item">
-            <label>Description ⬇️</label>
-            <input type="text" placeholder="And How Will You Do?" />
-          </div>
-          <div className="todo-input-item">
-            <button type="button" className="prmaryBtn">
-              Add
-            </button>
-          </div>
-        </div>
+  <div class="App">
+    <h1><span>✨ Task Master</span><span class="typed-cursor">|</span></h1>
 
-        <div className="btn-area">
-          <button className="secondaryBtn">
-            Todo
-          </button>
-          <button className="secondaryBtn">
-            Completed
-          </button>
+    <div class="todo-wrapper">
+      <div class="todo-input">
+        <div class="todo-input-item">
+          <label>✍️ Task Title</label>
+          <input type="text" placeholder="What's your next big task?" />
         </div>
-
-        <div className="todo-list">
-          <div className="todo-list-items">
-            <div>
-              <h3>Task</h3>
-              <p>Description</p>
-            </div>
-            <div className="icons">
-              <AiFillDelete className="delete-icon" />
-              <AiOutlineCheckSquare className="check-icon" />
-            </div>
-          </div>
+        <div class="todo-input-item">
+          <label>📝 Description</label>
+          <input type="text" placeholder="Break it down for me..." />
+        </div>
+        <div class="todo-input-item">
+          <button type="button" class="prmaryBtn">
+            Add Task ➕
+          </button>
         </div>
       </div>
-    </div>
 
-                
+      <div class="btn-area">
+        <button class="secondaryBtn">
+          📋 Active Tasks
+        </button>
+        <button class="secondaryBtn">
+          ✅ Completed
+        </button>
+      </div>
+
+      <div class="todo-list">
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
-
-   

@@ -1,174 +1,162 @@
+
 body {
-  background-color: #1f1e1e;
+  background-color: #1a1a1a;
   color: white;
-  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-}
-.typed-cursor{
-      --swiper-theme-color: #007aff;
-    --swiper-navigation-size: 44px;
-    font-style: normal;
-    text-align: center;
-    font-size: 2.90rem;
-    font-weight: normal;
-    letter-spacing: 0.00rem;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-family: "Merriweather";
-    color: #6674CC;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    opacity: 1;
+  color: #4a9eff;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.typed-cursor.typed-cursor--blink{
-  animation: typedjsBlink;
-}
-.digit {
-  font-size: 2em;
+.typed-cursor {
+  color: #4a9eff;
+  animation: blink 1s infinite;
 }
 
-
-
-  <h1 class="js-typed-wrapper lw-typed-wrapper lw-widget-in no-margin-top lw-brand-text learnworlds-heading learnworlds-heading-small learnworlds-element" id="el_1655311867663_518_typed"><span><span style="color: rgb(233, 30, 99);">#in</span></span><span class="typed-cursor" aria-hidden="true">|</span></h1>
+@keyframes blink {
+  50% { opacity: 0; }
 }
 
 .todo-wrapper {
-  background: #353434;
-  padding: 2%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0px 5px 7px rgb(27, 27, 27);
+  background: #2a2a2a;
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .todo-input {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 .todo-input-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-right: 25px;
+  gap: 8px;
 }
 
 .todo-input-item label {
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-weight: 600;
+  color: #4a9eff;
+  font-size: 0.9em;
 }
 
 .todo-input-item input {
-  padding: 8px;
+  padding: 12px;
   border: none;
-  width: 300px;
+  border-radius: 8px;
+  background: #3a3a3a;
+  color: white;
+  font-size: 1em;
+  transition: all 0.3s ease;
 }
 
 .todo-input-item input:focus {
-  outline: 2px solid deepskyblue;
-  border-radius: 4px;
-  padding-top: 7px;
-}
-
-.prmaryBtn {
-  background-color: steelblue;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  margin-top: 25px;
-  width: 80px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prmaryBtn:hover {
-  background-color: deepskyblue;
-}
-
-.secondaryBtn {
-  background-color: #414242;
-  color: white;
-  border: none;
-  border-radius: 0px;
-  margin-top: 25px;
-  width: fit-content;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.active {
-  background-color: deepskyblue;
+  outline: none;
+  box-shadow: 0 0 0 2px #4a9eff;
+  background: #404040;
 }
 
 .btn-area {
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-end; */
-  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.prmaryBtn, .secondaryBtn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.prmaryBtn {
+  background-color: #4a9eff;
+  color: white;
+}
+
+.prmaryBtn:hover {
+  background-color: #3d8ae0;
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.secondaryBtn:hover {
+  background-color: #4a4a4a;
+}
+
+.active {
+  background-color: #4a9eff;
 }
 
 .todo-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 15px;
 }
+
 .todo-list-items {
-  background-color: #414242;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 0px 3px 5px #1f1e1e;
+  transition: transform 0.3s ease;
+}
+
+.todo-list-items:hover {
+  transform: translateX(5px);
 }
 
 .todo-list-items h3 {
-  font-size: 25px;
-  color: deepskyblue;
-  font-weight: bold;
-  margin: 0;
+  color: #4a9eff;
+  margin: 0 0 5px 0;
+  font-size: 1.2em;
 }
 
 .todo-list-items p {
-  font-size: 14px;
-  color: #ffffff;
-  margin-top: 8px;
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9em;
 }
 
 .icons {
-  font-size: 35px;
-  cursor: pointer;
-  color: #1f1e1e;
+  display: flex;
+  gap: 15px;
 }
 
-.icons:hover {
-  color: steelblue;
+.delete-icon, .check-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .delete-icon {
-  font-size: 30px;
+  color: #ff4a4a;
 }
-.delete-icon:hover {
-  font-size: 35px;
-  color: deepskyblue;
-}
+
 .check-icon {
-  font-size: 30px;
+  color: #4aff4a;
 }
-.check-icon:hover {
-  font-size: 35px;
-  color: deepskyblue;
+
+.delete-icon:hover, .check-icon:hover {
+  transform: scale(1.2);
 }
