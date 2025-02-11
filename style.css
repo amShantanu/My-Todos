@@ -82,38 +82,28 @@ h1 {
 
 .todo-input-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid gray;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  width: 100%; /* Added to make input fill available width */
-  box-sizing: border-box; /* Added for accurate width calculation */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .todo-input-item label {
   font-weight: bold;
   margin-bottom: 5px;
-  text-align: center;  /* Center the label text */
-}
-
-.todo-input-item {
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
+  text-align: left;  /* Align label text to the left */
 }
 
 .group1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 5px;
 }
 .work {
    padding: 8px;
    border: none;
    width: 300px;
+   margin-left: 20px;
  } 
 
 .group2 {
