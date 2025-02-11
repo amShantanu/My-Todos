@@ -181,7 +181,7 @@ h1 {
 .todo-list-items h3 {
   font-size: 25px;
   color: #16a9da;
-  font-family:  Helvetica;
+  font-family: ui-monospace;
   margin: 0;
 }
 
@@ -189,8 +189,8 @@ h1 {
   font-size: 15px;
   color: #ffffff;
   margin-top: 3px;
-  font-family: sans-serif;
-  font-style: italic;
+  font-family: cursive;
+  font-weight: 100;
 }
 
 .icons {
