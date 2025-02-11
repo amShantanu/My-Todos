@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>${todo.description}</p>
         </div>
         <div class="icons">
-          <span class="delete-icon" onclick="deleteTodo(${todo.id})" title="Delete task">❌</span>
-          <span class="check-icon" onclick="toggleTodo(${todo.id})" title="${todo.completed ? 'Mark as incomplete' : 'Mark as complete'}">${todo.completed ? '↩️' : '✅'}</span>
+          <span class="delete-icon" onclick="deleteTodo(${todo.id})">🗑️</span>
+          <span class="check-icon" onclick="toggleTodo(${todo.id})">✓</span>
         </div>
       </div>
     `).join('');
