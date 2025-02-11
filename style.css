@@ -86,7 +86,10 @@ h1 {
 
 .todo-input-item label {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: steelblue;
+  letter-spacing: 0.5px;
 }
 
 .todo-input-item {
