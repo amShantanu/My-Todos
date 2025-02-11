@@ -6,11 +6,13 @@ body {
 body.dark-mode {
   background-color: #1f1e1e;
   color: white;
+  font-weight: bold;
 }
 
 body.light-mode {
   background-color: #f0f2f5;
-  color: #333;
+  color: steelblue;
+  font-weight: bold;
 }
 
 .theme-toggle {
@@ -179,7 +181,7 @@ h1 {
 .todo-list-items h3 {
   font-size: 25px;
   color: #16a9da;
-  font-weight: bold;
+  font-family:  Helvetica;
   margin: 0;
 }
 
@@ -187,6 +189,8 @@ h1 {
   font-size: 15px;
   color: #ffffff;
   margin-top: 3px;
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 .icons {
