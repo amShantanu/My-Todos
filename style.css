@@ -26,15 +26,15 @@ h1 {
 }
 
 .typed-cursor.typed-cursor--blink{
-  animation: typedjsBlink;
-}
-.digit {
-  font-size: 2em;
+  animation: typedjsBlink 1s infinite;
 }
 
+@keyframes typedjsBlink{
+  30%{opacity: 0.0;}
+}
 
-
-  <h1 class="js-typed-wrapper lw-typed-wrapper lw-widget-in no-margin-top lw-brand-text learnworlds-heading learnworlds-heading-small learnworlds-element" id="el_1655311867663_518_typed"><span><span style="color: rgb(233, 30, 99);">#in</span></span><span class="typed-cursor" aria-hidden="true">|</span></h1>
+.typed-cursor.typed-cursor--blink.typed {
+  animation: typedjsBlink 1s infinite;
 }
 
 .todo-wrapper {
@@ -49,7 +49,7 @@ h1 {
   box-shadow: 0px 5px 7px rgb(27, 27, 27);
 }
 
-.todo-input {
+.todo-input-item input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,23 +58,36 @@ h1 {
   margin-bottom: 25px;
 }
 
-.todo-input-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 25px;
-}
-
 .todo-input-item label {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
-.todo-input-item input {
+.todo-input-item {
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 30px;
+}
+
+.group2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-bottom: 5px;
+}
+.description {
+   padding: 8px;
+   border: none;
+   width: 300px;
+ } 
+
+ .todo-input-item input {
   padding: 8px;
   border: none;
   width: 300px;
-}
+} 
 
 .todo-input-item input:focus {
   outline: 2px solid deepskyblue;
@@ -88,7 +101,8 @@ h1 {
   border: none;
   border-radius: 4px;
   margin-top: 25px;
-  width: 80px;
+  margin-left: 50px;
+  width: 230px;
   padding: 10px;
   cursor: pointer;
 }
@@ -113,10 +127,10 @@ h1 {
 }
 
 .btn-area {
-  /* display: flex;
+ /* display: flex;
   flex-direction: row;
-  align-items: flex-end; */
-  margin-bottom: 15px;
+  align-items: flex-end; 
+  margin-bottom: 15px; */
 }
 
 .todo-list {
@@ -131,44 +145,47 @@ h1 {
   padding: 25px;
   padding-bottom: 10px;
   padding-top: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 0px 3px 5px #1f1e1e;
 }
 
 .todo-list-items h3 {
   font-size: 25px;
-  color: deepskyblue;
+  color: #16a9da;
   font-weight: bold;
   margin: 0;
 }
 
 .todo-list-items p {
-  font-size: 14px;
+  font-size: 15px;
   color: #ffffff;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 
 .icons {
-  font-size: 35px;
+  font-size: 30px;
   cursor: pointer;
   color: #1f1e1e;
 }
 
 .icons:hover {
-  color: steelblue;
+  color: #446988;
 }
 
 .delete-icon {
-  font-size: 30px;
+  font-size: 20px;
 }
 .delete-icon:hover {
-  font-size: 35px;
+  font-size: 25px;
   color: deepskyblue;
 }
 .check-icon {
   font-size: 30px;
+  font-weight: bold;
 }
 .check-icon:hover {
   font-size: 35px;
   color: deepskyblue;
 }
+
