@@ -103,20 +103,25 @@ h1 {
   align-items: center;
 }
 
-.group1, .group2 {
+.group1 {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
   margin-right: 30px;
   margin-bottom: 5px;
-  width: 100%;
-  text-align: center;
 }
 .work {
    padding: 8px;
    border: none;
    width: 300px;
+ } 
+
+.group2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 30px;
+  margin-bottom: 5px;
 }
 .description {
    padding: 8px;
