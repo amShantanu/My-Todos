@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const todoList = document.querySelector('.todo-list');
   const [todoBtn, completedBtn] = document.querySelectorAll('.secondaryBtn');
   
-  let todos = [];
+  let todos = JSON.parse(localStorage.getItem('todos')) || [];
   let isCompleted = false;
   
   addButton.addEventListener('click', () => {
@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderTodos() {
+    localStorage.setItem('todos', JSON.stringify(todos));
     const filteredTodos = todos.filter(todo => todo.completed === isCompleted);
     updateButtonCounts();
     todoList.innerHTML = filteredTodos.map(todo => `
