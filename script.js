@@ -1,5 +1,21 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Theme handling
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  
+  // Check for saved theme preference
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  body.classList.add(`${savedTheme}-mode`);
+  themeToggle.textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+  
+  themeToggle.addEventListener('click', () => {
+    const isDark = body.classList.contains('dark-mode');
+    body.classList.remove(isDark ? 'dark-mode' : 'light-mode');
+    body.classList.add(isDark ? 'light-mode' : 'dark-mode');
+    themeToggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  });
   const titleInput = document.querySelector('input[placeholder="What You Decided?"]');
   const descInput = document.querySelector('input[placeholder="And How Will You Do?"]');
   const addButton = document.querySelector('.prmaryBtn');
