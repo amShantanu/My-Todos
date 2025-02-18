@@ -10,9 +10,13 @@ body.dark-mode {
 }
 
 body.light-mode {
-  background-color: #efefdf;
-  color: white;
+  background-color: #e0f0e1;
+  color: bottlegreen;;
   font-weight: bold;
+}
+.light-mode .todo-wrapper {
+  background: #cfdcb7dd;
+  box-shadow: 0px 5px 7px rgb(86, 78, 78, 0.2);
 }
 
 .theme-toggle {
@@ -162,13 +166,6 @@ h1 {
   background-color: deepskyblue;
 }
 
-.btn-area {
- /* display: flex;
-  flex-direction: row;
-  align-items: flex-end; 
-  margin-bottom: 15px; */
-}
-
 .todo-list {
   display: flex;
   flex-direction: column;
@@ -207,23 +204,28 @@ h1 {
   cursor: pointer;
   color: #1f1e1e;
   margin-left: 15px;
-}
-
-.icons:hover {
-  color: #446988;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 
 .delete-icon {
   font-size: 20px;
+  cursor: pointer; 
+  margin-left: 5px;
 }
+
 .delete-icon:hover {
   font-size: 25px;
-  color: deepskyblue;
 }
+
 .check-icon {
   font-size: 30px;
   font-weight: bold;
+  cursor: pointer;
+  color: #1f1e1e;
+  margin-left: 5px;
 }
+
 .check-icon:hover {
   font-size: 35px;
   color: deepskyblue;
